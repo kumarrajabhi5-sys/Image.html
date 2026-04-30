@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resize Image Online – Pixels, CM, MM, Inches Free | CompressPic</title>
+<meta name="description" content="Resize images by pixels, centimeters, millimeters or inches free online. Lock aspect ratio, set custom DPI for print-ready output. No upload needed.">
+<link rel="canonical" href="https://compresspic.in/resize">
+<meta property="og:title" content="Resize Image Online – Pixels, CM, MM, Inches Free | CompressPic">
+<meta property="og:description" content="Resize images by pixels, centimeters, millimeters or inches free online. Lock aspect ratio, set custom DPI for print-ready output. No upload needed.">
+<meta property="og:url" content="https://compresspic.in/resize">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CompressPic">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Resize Image Online Free – px, cm, mm, inch | CompressPic">
+<meta name="twitter:description" content="Resize images by pixels, cm, mm or inches. Lock aspect ratio. Free, no upload needed.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"How do I resize an image in centimeters?","acceptedAnswer":{"@type":"Answer","text":"Upload your image on CompressPic's Image Resizer, select 'cm' as the unit, enter your desired width and height in centimeters, set the DPI (72 for web, 300 for print), and click Resize and Download."}},
+    {"@type":"Question","name":"What DPI should I use for printing?","acceptedAnswer":{"@type":"Answer","text":"For print quality output, use 300 DPI. For screen or web use, 72 DPI is standard. The DPI setting only affects how physical units like cm, mm, and inches are converted to pixels."}},
+    {"@type":"Question","name":"How do I resize an image without distorting it?","acceptedAnswer":{"@type":"Answer","text":"Enable the Lock Aspect Ratio option before resizing. When locked, changing the width automatically updates the height proportionally, keeping your image undistorted."}},
+    {"@type":"Question","name":"Can I resize an image to a specific pixel size?","acceptedAnswer":{"@type":"Answer","text":"Yes. Select 'px' as the unit and enter the exact width and height in pixels. You can disable aspect ratio lock to set custom dimensions independently."}},
+    {"@type":"Question","name":"Does resizing reduce image quality?","acceptedAnswer":{"@type":"Answer","text":"Enlarging an image beyond its original size can reduce sharpness. Reducing size generally preserves quality well. CompressPic outputs at 92% JPEG quality for best results."}}
+  ]
+}
+function toggleNav(){document.getElementById("navLinks").classList.toggle("open");}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#f7f8fc;--white:#fff;--border:#e4e7ef;--text:#111827;--muted:#6b7280;--light:#f3f4f6;--primary:#2563eb;--primary-light:#eff6ff;--primary-border:#bfdbfe;--success:#16a34a;--radius:14px;--shadow:0 1px 3px rgba(0,0,0,.07),0 4px 16px rgba(0,0,0,.05);}
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{background:var(--bg);color:var(--text);font-family:'Plus Jakarta Sans',sans-serif;min-height:100vh;-webkit-font-smoothing:antialiased;}
+  nav{background:var(--white);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100;padding:0 32px;display:flex;align-items:center;justify-content:space-between;height:62px;}
+  .logo{font-weight:800;font-size:1.25rem;color:var(--primary);text-decoration:none;letter-spacing:-.4px;}
+  .logo span{color:var(--text);}
+  .nav-links{display:flex;gap:4px;}
+  .nav-links a{color:var(--muted);text-decoration:none;font-size:.875rem;font-weight:600;padding:7px 14px;border-radius:8px;transition:all .18s;}
+  .nav-links a:hover{color:var(--text);background:var(--light);}
+  .nav-links a.active{color:var(--primary);background:var(--primary-light);}
+  
+  
+  @media(max-width:640px){.nav-links{display:none!important;}.nav-links.open{display:flex!important;flex-direction:column;position:absolute;top:62px;left:0;right:0;background:var(--white);border-bottom:1px solid var(--border);padding:12px 16px;gap:4px;z-index:200;box-shadow:0 8px 24px rgba(0,0,0,.08);}}
+  .page-header{padding:48px 24px 36px;text-align:center;max-width:600px;margin:0 auto;}
+  .page-header h1{font-size:clamp(1.5rem,4vw,2.1rem);font-weight:800;letter-spacing:-.5px;margin-bottom:10px;}
+  .page-header p{color:var(--muted);font-size:.95rem;line-height:1.7;}
+  .ad-slot{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:16px;text-align:center;color:var(--muted);font-size:.75rem;margin:0 auto 36px;max-width:728px;min-height:90px;display:flex;align-items:center;justify-content:center;}
+  .tool-wrapper{max-width:600px;margin:0 auto;padding:0 20px 72px;}
+
+  .drop-zone{background:var(--white);border:2px dashed var(--border);border-radius:var(--radius);padding:52px 24px;text-align:center;cursor:pointer;transition:all .2s;position:relative;box-shadow:var(--shadow);}
+  .drop-zone:hover,.drop-zone.dragover{border-color:var(--primary);background:var(--primary-light);}
+  .drop-zone input{position:absolute;inset:0;opacity:0;cursor:pointer;width:100%;height:100%;}
+  .drop-icon{font-size:2.8rem;margin-bottom:16px;display:block;}
+  .drop-zone h3{font-size:1.05rem;font-weight:700;margin-bottom:6px;}
+  .drop-zone p{color:var(--muted);font-size:.85rem;}
+  .browse-link{color:var(--primary);font-weight:700;}
+
+  .settings-panel{background:var(--white);border:1px solid var(--border);border-radius:var(--radius);margin-top:16px;box-shadow:var(--shadow);display:none;overflow:hidden;}
+  .settings-panel.show{display:block;}
+  .file-info{display:flex;align-items:center;gap:14px;padding:16px 20px;border-bottom:1px solid var(--border);background:var(--light);}
+  .file-thumb{width:52px;height:52px;border-radius:8px;object-fit:cover;border:1px solid var(--border);flex-shrink:0;}
+  .file-details{flex:1;overflow:hidden;}
+  .file-name{font-weight:700;font-size:.88rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .file-meta{color:var(--muted);font-size:.8rem;margin-top:2px;}
+  .change-btn{font-size:.78rem;font-weight:600;color:var(--primary);cursor:pointer;background:none;border:none;font-family:inherit;flex-shrink:0;}
+
+  .settings-body{padding:20px;}
+  .setting-row{margin-bottom:18px;}
+  .setting-row label{display:block;font-size:.82rem;font-weight:700;margin-bottom:8px;}
+
+  .unit-group{display:flex;gap:6px;flex-wrap:wrap;}
+  .unit-btn{background:var(--bg);border:1.5px solid var(--border);color:var(--muted);padding:8px 16px;border-radius:8px;cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif;font-size:.82rem;font-weight:700;transition:all .18s;}
+  .unit-btn.active{background:var(--primary);border-color:var(--primary);color:#fff;}
+
+  .dims-row{display:grid;grid-template-columns:1fr auto 1fr;gap:10px;align-items:center;margin-bottom:8px;}
+  .dim-input{background:var(--bg);border:1.5px solid var(--border);color:var(--text);padding:11px 14px;border-radius:10px;font-family:'Plus Jakarta Sans',sans-serif;font-size:1rem;font-weight:700;width:100%;outline:none;transition:border .2s;text-align:center;}
+  .dim-input:focus{border-color:var(--primary);background:var(--white);}
+  .dim-sep{text-align:center;color:var(--muted);font-weight:700;font-size:.9rem;}
+  .dim-labels{display:grid;grid-template-columns:1fr auto 1fr;gap:10px;margin-bottom:16px;}
+  .dim-label{text-align:center;font-size:.75rem;color:var(--muted);font-weight:600;}
+
+  .lock-row{display:flex;align-items:center;gap:10px;margin-bottom:20px;padding:12px 14px;background:var(--light);border-radius:8px;cursor:pointer;}
+  .lock-check{width:18px;height:18px;accent-color:var(--primary);cursor:pointer;}
+  .lock-label{font-size:.85rem;font-weight:600;color:var(--text);cursor:pointer;}
+
+  .dpi-row{margin-bottom:20px;display:none;}
+  .dpi-row.show{display:block;}
+  .dpi-inner{display:flex;align-items:center;gap:10px;}
+  .dpi-input{background:var(--bg);border:1.5px solid var(--border);color:var(--text);padding:10px 14px;border-radius:10px;font-family:'Plus Jakarta Sans',sans-serif;font-size:.95rem;font-weight:700;width:90px;outline:none;}
+  .dpi-hint{font-size:.78rem;color:var(--muted);}
+
+  .resize-btn{width:100%;padding:14px;background:var(--primary);color:#fff;border:none;border-radius:10px;font-family:'Plus Jakarta Sans',sans-serif;font-size:.95rem;font-weight:700;cursor:pointer;transition:all .2s;}
+  .resize-btn:hover{background:#1d4ed8;transform:translateY(-1px);}
+
+  footer{background:var(--white);border-top:1px solid var(--border);padding:28px 24px;text-align:center;color:var(--muted);font-size:.82rem;margin-top:40px;}
+  footer .footer-links{display:flex;justify-content:center;flex-wrap:wrap;gap:4px;margin-bottom:12px;}
+  footer a{color:var(--muted);text-decoration:none;padding:5px 10px;border-radius:6px;font-weight:500;transition:all .15s;}
+  footer a:hover{color:var(--text);background:var(--light);}
+  }@media(min-width:601px){}
+
+  /* NAV HAMBURGER */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 8px;
+    background: none;
+    border: none;
+  }
+  .hamburger span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: var(--text);
+    border-radius: 2px;
+    transition: all 0.2s;
+  }
+  @media(max-width: 640px) {
+    .hamburger { display: flex; }
+    .nav-links { display: none !important; }
+    .nav-links.open { display: flex !important; flex-direction: column; position: absolute; top: 62px; left: 0; right: 0; background: var(--white); border-bottom: 1px solid var(--border); padding: 12px 16px; gap: 4px; z-index: 200; box-shadow: 0 8px 24px rgba(0,0,0,.08); }
+  }
+
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="logo">Compress<span>Pic</span></a>
+  <div class="nav-links" id="navLinks">
+    <a href="compress.html">Compress</a>
+    <a href="bulk-compress.html">Bulk</a>
+    <a href="convert.html">Convert</a>
+    <a href="resize.html">Resize</a>
+    <a href="remove-exif.html">Remove EXIF</a>
+    <a href="blog/index.html">Blog</a>
+  </div>
+  <button class="hamburger" onclick="toggleNav()" aria-label="Open menu"><span></span><span></span><span></span></button>
+</nav>
+
+<div class="page-header">
+  <h1>Resize Image Online Free</h1>
+  <p>Resize by pixels, centimeters, millimeters or inches. Lock aspect ratio. Set DPI for print. Download instantly.</p>
+</div>
+
+<div class="ad-slot"><!-- Google AdSense --></div>
+
+<div class="tool-wrapper">
+
+  <div class="drop-zone" id="dropZone">
+    <input type="file" id="fileInput" accept="image/jpeg,image/png,image/webp">
+    <span class="drop-icon">📐</span>
+    <h3>Drop your image here</h3>
+    <p>or <span class="browse-link">click to browse</span> &nbsp;·&nbsp; JPG, PNG, WebP</p>
+  </div>
+
+  <div class="settings-panel" id="settingsPanel">
+    <div class="file-info">
+      <img class="file-thumb" id="fileThumbnail" src="" alt="">
+      <div class="file-details">
+        <div class="file-name" id="fileName"></div>
+        <div class="file-meta" id="fileMeta"></div>
+      </div>
+      <button class="change-btn" onclick="resetTool()">Change image</button>
+    </div>
+    <div class="settings-body">
+
+      <div class="setting-row">
+        <label>Unit</label>
+        <div class="unit-group">
+          <button class="unit-btn active" onclick="setUnit('px',this)">Pixels (px)</button>
+          <button class="unit-btn" onclick="setUnit('cm',this)">Centimeters (cm)</button>
+          <button class="unit-btn" onclick="setUnit('mm',this)">Millimeters (mm)</button>
+          <button class="unit-btn" onclick="setUnit('in',this)">Inches (in)</button>
+        </div>
+      </div>
+
+      <div class="dpi-row" id="dpiRow">
+        <label style="display:block;font-size:.82rem;font-weight:700;margin-bottom:8px;">DPI (Resolution)</label>
+        <div class="dpi-inner">
+          <input type="number" class="dpi-input" id="dpiInput" value="72" min="72" max="600">
+          <span class="dpi-hint">72 dpi = screen/web &nbsp;·&nbsp; 300 dpi = print quality</span>
+        </div>
+      </div>
+
+      <div class="setting-row">
+        <label>Dimensions</label>
+        <div class="dims-row">
+          <input type="number" class="dim-input" id="widthInput" placeholder="Width" min="1">
+          <div class="dim-sep">×</div>
+          <input type="number" class="dim-input" id="heightInput" placeholder="Height" min="1">
+        </div>
+        <div class="dim-labels">
+          <div class="dim-label">Width</div>
+          <div></div>
+          <div class="dim-label">Height</div>
+        </div>
+      </div>
+
+      <label class="lock-row" for="lockCheck">
+        <input type="checkbox" class="lock-check" id="lockCheck" checked>
+        <span class="lock-label">🔗 Lock aspect ratio (proportional resize)</span>
+      </label>
+
+      <button class="resize-btn" onclick="resizeImage()">📐 Resize & Download</button>
+    </div>
+  </div>
+
+</div>
+
+<div class="ad-slot" style="max-width:728px;margin:0 auto;"><!-- Google AdSense --></div>
+
+<footer>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="compress.html">Compress</a>
+    <a href="bulk-compress.html">Bulk Compress</a>
+    <a href="convert.html">Convert</a>
+    <a href="resize.html">Resize</a>
+    <a href="remove-exif.html">Remove EXIF</a>
+    <a href="blog/index.html">Blog</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Use</a>
+  </div>
+  <p>© 2026 CompressPic.in · Free Image Tools · All processing done in your browser</p>
+</footer>
+
+<script>
+let currentFile = null;
+let origW = 0, origH = 0, aspect = 1;
+let unit = 'px';
+let updating = false;
+
+const dropZone = document.getElementById('dropZone');
+const fileInput = document.getElementById('fileInput');
+const wIn = document.getElementById('widthInput');
+const hIn = document.getElementById('heightInput');
+
+dropZone.addEventListener('dragover', e => { e.preventDefault(); dropZone.classList.add('dragover'); });
+dropZone.addEventListener('dragleave', () => dropZone.classList.remove('dragover'));
+dropZone.addEventListener('drop', e => { e.preventDefault(); dropZone.classList.remove('dragover'); const f = e.dataTransfer.files[0]; if(f) loadFile(f); });
+fileInput.addEventListener('change', e => { if(e.target.files[0]) loadFile(e.target.files[0]); });
+
+function loadFile(file) {
+  currentFile = file;
+  const img = new Image();
+  const url = URL.createObjectURL(file);
+  img.onload = () => {
+    origW = img.naturalWidth; origH = img.naturalHeight; aspect = origW / origH;
+    URL.revokeObjectURL(url);
+    setInputs(origW, origH);
+    document.getElementById('fileMeta').textContent = `${origW} × ${origH} px · ${(file.size/1024).toFixed(1)} KB`;
+  };
+  img.src = url;
+
+  const reader = new FileReader();
+  reader.onload = e => document.getElementById('fileThumbnail').src = e.target.result;
+  reader.readAsDataURL(file);
+
+  document.getElementById('fileName').textContent = file.name;
+  dropZone.style.display = 'none';
+  document.getElementById('settingsPanel').classList.add('show');
+}
+
+function resetTool() {
+  currentFile = null; fileInput.value = '';
+  dropZone.style.display = '';
+  document.getElementById('settingsPanel').classList.remove('show');
+}
+
+function getDpi() { return parseInt(document.getElementById('dpiInput').value) || 72; }
+
+function pxToUnit(px) {
+  const d = getDpi();
+  if (unit === 'px') return Math.round(px);
+  if (unit === 'cm') return +(px / d * 2.54).toFixed(2);
+  if (unit === 'mm') return +(px / d * 25.4).toFixed(1);
+  if (unit === 'in') return +(px / d).toFixed(2);
+}
+function unitToPx(v) {
+  const d = getDpi();
+  if (unit === 'px') return Math.round(v);
+  if (unit === 'cm') return Math.round(v / 2.54 * d);
+  if (unit === 'mm') return Math.round(v / 25.4 * d);
+  if (unit === 'in') return Math.round(v * d);
+}
+
+function setInputs(w, h) { wIn.value = pxToUnit(w); hIn.value = pxToUnit(h); }
+
+function setUnit(u, btn) {
+  unit = u;
+  document.querySelectorAll('.unit-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById('dpiRow').classList.toggle('show', u !== 'px');
+  if (origW) setInputs(origW, origH);
+}
+
+wIn.addEventListener('input', () => {
+  if (!document.getElementById('lockCheck').checked || updating) return;
+  updating = true;
+  const px = unitToPx(parseFloat(wIn.value) || 0);
+  hIn.value = pxToUnit(Math.round(px / aspect));
+  updating = false;
+});
+hIn.addEventListener('input', () => {
+  if (!document.getElementById('lockCheck').checked || updating) return;
+  updating = true;
+  const px = unitToPx(parseFloat(hIn.value) || 0);
+  wIn.value = pxToUnit(Math.round(px * aspect));
+  updating = false;
+});
+
+function resizeImage() {
+  if (!currentFile) return;
+  const wPx = unitToPx(parseFloat(wIn.value));
+  const hPx = unitToPx(parseFloat(hIn.value));
+  if (!wPx || !hPx) return;
+  const img = new Image();
+  const url = URL.createObjectURL(currentFile);
+  img.onload = () => {
+    const canvas = document.createElement('canvas');
+    canvas.width = wPx; canvas.height = hPx;
+    canvas.getContext('2d').drawImage(img, 0, 0, wPx, hPx);
+    URL.revokeObjectURL(url);
+    canvas.toBlob(blob => {
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = currentFile.name.replace(/\.[^/.]+$/, '') + `_${wPx}x${hPx}.jpg`;
+      a.click();
+    }, 'image/jpeg', 0.92);
+  };
+  img.src = url;
+}
+function toggleFaq(btn) {
+  const a = btn.nextElementSibling;
+  const c = btn.querySelector('.faq-chevron');
+  a.classList.toggle('open');
+  c.classList.toggle('open');
+}
+</script>
+<style>
+.faq-section{padding:40px 20px;max-width:600px;margin:0 auto;}
+.faq-section h2{font-size:1.3rem;font-weight:800;letter-spacing:-.4px;margin-bottom:20px;}
+.faq-item{background:var(--white);border:1px solid var(--border);border-radius:12px;margin-bottom:8px;overflow:hidden;box-shadow:var(--shadow);}
+.faq-q{width:100%;background:transparent;border:none;color:var(--text);padding:16px 18px;text-align:left;font-family:'Plus Jakarta Sans',sans-serif;font-size:.875rem;font-weight:600;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;}
+.faq-q:hover{background:var(--light);}
+.faq-a{padding:0 18px;color:var(--muted);font-size:.85rem;line-height:1.7;max-height:0;overflow:hidden;transition:max-height .3s ease,padding .3s;}
+.faq-a.open{max-height:200px;padding:12px 18px 16px;border-top:1px solid var(--border);}
+.faq-chevron{color:var(--muted);transition:transform .3s;flex-shrink:0;font-size:.72rem;}
+.faq-chevron.open{transform:rotate(180deg);}
+</style>
+<section class="faq-section">
+  <h2>Frequently Asked Questions</h2>
+  <div class="faq-item">
+    <button class="faq-q" onclick="toggleFaq(this)">How do I resize an image in centimeters? <span class="faq-chevron">▼</span></button>
+    <div class="faq-a">Upload your image, select "cm" as the unit, enter width and height in centimeters, set DPI (72 for web, 300 for print), and click Resize and Download.</div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-q" onclick="toggleFaq(this)">What DPI should I use for printing? <span class="faq-chevron">▼</span></button>
+    <div class="faq-a">Use 300 DPI for print quality. Use 72 DPI for screen or web. DPI only affects how cm, mm, and inches are converted to pixels.</div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-q" onclick="toggleFaq(this)">How do I resize without distorting the image? <span class="faq-chevron">▼</span></button>
+    <div class="faq-a">Enable Lock Aspect Ratio before resizing. Changing the width will automatically update the height proportionally so the image stays undistorted.</div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-q" onclick="toggleFaq(this)">Can I resize to an exact pixel size? <span class="faq-chevron">▼</span></button>
+    <div class="faq-a">Yes. Select "px" as the unit and enter exact width and height in pixels. Disable aspect ratio lock to set dimensions independently.</div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-q" onclick="toggleFaq(this)">Does resizing reduce image quality? <span class="faq-chevron">▼</span></button>
+    <div class="faq-a">Enlarging beyond the original size can reduce sharpness. Reducing size generally preserves quality well. CompressPic outputs at 92% JPEG quality.</div>
+  </div>
+</section>
+</body>
+</html>

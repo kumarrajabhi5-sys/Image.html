@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Convert Image Format – JPG to PNG, PNG to WebP Free | CompressPic</title>
+<meta name="description" content="Convert images between JPG, PNG and WebP format free online. No upload required – format conversion happens instantly in your browser.">
+<link rel="canonical" href="https://compresspic.in/convert">
+<meta property="og:title" content="Convert Image Format – JPG to PNG, PNG to WebP Free | CompressPic">
+<meta property="og:description" content="Convert images between JPG, PNG and WebP format free online. No upload required – format conversion happens instantly in your browser.">
+<meta property="og:url" content="https://compresspic.in/convert">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CompressPic">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Convert JPG PNG WebP Free Online | CompressPic">
+<meta name="twitter:description" content="Convert images between JPG, PNG and WebP instantly. Free, no upload needed.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"How do I convert PNG to WebP for free?","acceptedAnswer":{"@type":"Answer","text":"Upload your PNG image on CompressPic's Format Converter, select WebP as the output format, and click Convert and Download. The conversion happens instantly in your browser for free."}},
+    {"@type":"Question","name":"Why should I convert images to WebP?","acceptedAnswer":{"@type":"Answer","text":"WebP images are 25-35% smaller than JPG and PNG files of similar quality. This makes websites load faster and improves Google PageSpeed scores, which can help with SEO rankings."}},
+    {"@type":"Question","name":"Can I convert WebP back to JPG or PNG?","acceptedAnswer":{"@type":"Answer","text":"Yes. CompressPic supports converting WebP to JPG and WebP to PNG as well. Simply upload the WebP file and choose your desired output format."}},
+    {"@type":"Question","name":"Does converting an image change its quality?","acceptedAnswer":{"@type":"Answer","text":"Converting from PNG to JPG or WebP may reduce quality slightly due to compression. Converting from JPG to PNG will not reduce quality as PNG is lossless, but the file size will likely be larger."}}
+  ]
+}
+function toggleNav(){document.getElementById("navLinks").classList.toggle("open");}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#f7f8fc;--white:#fff;--border:#e4e7ef;--text:#111827;--muted:#6b7280;--light:#f3f4f6;--primary:#2563eb;--primary-light:#eff6ff;--primary-border:#bfdbfe;--success:#16a34a;--radius:14px;--shadow:0 1px 3px rgba(0,0,0,.07),0 4px 16px rgba(0,0,0,.05);}
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{background:var(--bg);color:var(--text);font-family:'Plus Jakarta Sans',sans-serif;min-height:100vh;-webkit-font-smoothing:antialiased;}
+  nav{background:var(--white);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100;padding:0 32px;display:flex;align-items:center;justify-content:space-between;height:62px;}
+  .logo{font-weight:800;font-size:1.25rem;color:var(--primary);text-decoration:none;letter-spacing:-.4px;}
+  .logo span{color:var(--text);}
+  .nav-links{display:flex;gap:4px;}
+  .nav-links a{color:var(--muted);text-decoration:none;font-size:.875rem;font-weight:600;padding:7px 14px;border-radius:8px;transition:all .18s;}
+  .nav-links a:hover{color:var(--text);background:var(--light);}
+  .nav-links a.active{color:var(--primary);background:var(--primary-light);}
+  
+  
+  @media(max-width:640px){.nav-links{display:none!important;}.nav-links.open{display:flex!important;flex-direction:column;position:absolute;top:62px;left:0;right:0;background:var(--white);border-bottom:1px solid var(--border);padding:12px 16px;gap:4px;z-index:200;box-shadow:0 8px 24px rgba(0,0,0,.08);}}
+  .page-header{padding:48px 24px 36px;text-align:center;max-width:600px;margin:0 auto;}
+  .page-header h1{font-size:clamp(1.5rem,4vw,2.1rem);font-weight:800;letter-spacing:-.5px;margin-bottom:10px;}
+  .page-header p{color:var(--muted);font-size:.95rem;line-height:1.7;}
+  .ad-slot{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:16px;text-align:center;color:var(--muted);font-size:.75rem;margin:0 auto 36px;max-width:728px;min-height:90px;display:flex;align-items:center;justify-content:center;}
+  .tool-wrapper{max-width:580px;margin:0 auto;padding:0 20px 72px;}
+
+  .drop-zone{background:var(--white);border:2px dashed var(--border);border-radius:var(--radius);padding:52px 24px;text-align:center;cursor:pointer;transition:all .2s;position:relative;box-shadow:var(--shadow);}
+  .drop-zone:hover,.drop-zone.dragover{border-color:var(--primary);background:var(--primary-light);}
+  .drop-zone input{position:absolute;inset:0;opacity:0;cursor:pointer;width:100%;height:100%;}
+  .drop-icon{font-size:2.8rem;margin-bottom:16px;display:block;}
+  .drop-zone h3{font-size:1.05rem;font-weight:700;margin-bottom:6px;}
+  .drop-zone p{color:var(--muted);font-size:.85rem;}
+  .browse-link{color:var(--primary);font-weight:700;}
+
+  .settings-panel{background:var(--white);border:1px solid var(--border);border-radius:var(--radius);margin-top:16px;box-shadow:var(--shadow);display:none;overflow:hidden;}
+  .settings-panel.show{display:block;}
+
+  .file-info{display:flex;align-items:center;gap:14px;padding:16px 20px;border-bottom:1px solid var(--border);background:var(--light);}
+  .file-thumb{width:52px;height:52px;border-radius:8px;object-fit:cover;border:1px solid var(--border);flex-shrink:0;}
+  .file-details{flex:1;overflow:hidden;}
+  .file-name{font-weight:700;font-size:.88rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .file-meta{color:var(--muted);font-size:.8rem;margin-top:2px;}
+  .change-btn{font-size:.78rem;font-weight:600;color:var(--primary);cursor:pointer;background:none;border:none;font-family:inherit;flex-shrink:0;}
+
+  .settings-body{padding:20px;}
+  .setting-label{font-size:.82rem;font-weight:700;margin-bottom:12px;display:block;}
+
+  .format-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:24px;}
+  .format-btn{background:var(--bg);border:1.5px solid var(--border);color:var(--muted);padding:16px 8px;border-radius:10px;cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif;font-size:.9rem;font-weight:700;transition:all .18s;text-align:center;}
+  .format-btn .fmt-icon{font-size:1.4rem;display:block;margin-bottom:6px;}
+  .format-btn:hover{border-color:var(--primary-border);color:var(--text);}
+  .format-btn.active{background:var(--primary-light);border-color:var(--primary);color:var(--primary);}
+
+  .convert-btn{width:100%;padding:14px;background:var(--primary);color:#fff;border:none;border-radius:10px;font-family:'Plus Jakarta Sans',sans-serif;font-size:.95rem;font-weight:700;cursor:pointer;transition:all .2s;}
+  .convert-btn:hover{background:#1d4ed8;transform:translateY(-1px);}
+
+  footer{background:var(--white);border-top:1px solid var(--border);padding:28px 24px;text-align:center;color:var(--muted);font-size:.82rem;margin-top:40px;}
+  footer .footer-links{display:flex;justify-content:center;flex-wrap:wrap;gap:4px;margin-bottom:12px;}
+  footer a{color:var(--muted);text-decoration:none;padding:5px 10px;border-radius:6px;font-weight:500;transition:all .15s;}
+  footer a:hover{color:var(--text);background:var(--light);}
+  }@media(min-width:601px){}
+
+  /* NAV HAMBURGER */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 8px;
+    background: none;
+    border: none;
+  }
+  .hamburger span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: var(--text);
+    border-radius: 2px;
+    transition: all 0.2s;
+  }
+  @media(max-width: 640px) {
+    .hamburger { display: flex; }
+    .nav-links { display: none !important; }
+    .nav-links.open { display: flex !important; flex-direction: column; position: absolute; top: 62px; left: 0; right: 0; background: var(--white); border-bottom: 1px solid var(--border); padding: 12px 16px; gap: 4px; z-index: 200; box-shadow: 0 8px 24px rgba(0,0,0,.08); }
+  }
+
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="logo">Compress<span>Pic</span></a>
+  <div class="nav-links" id="navLinks">
+    <a href="compress.html">Compress</a>
+    <a href="bulk-compress.html">Bulk</a>
+    <a href="convert.html">Convert</a>
+    <a href="resize.html">Resize</a>
+    <a href="remove-exif.html">Remove EXIF</a>
+    <a href="blog/index.html">Blog</a>
+  </div>
+  <button class="hamburger" onclick="toggleNav()" aria-label="Open menu"><span></span><span></span><span></span></button>
+</nav>
+
+<div class="page-header">
+  <h1>Convert Image Format Free</h1>
+  <p>Convert JPG to PNG, PNG to WebP, WebP to JPG and more — instantly in your browser, no upload needed.</p>
+</div>
+
+<div class="ad-slot"><!-- Google AdSense --></div>
+
+<div class="tool-wrapper">
+
+  <div class="drop-zone" id="dropZone">
+    <input type="file" id="fileInput" accept="image/jpeg,image/png,image/webp">
+    <span class="drop-icon">🔄</span>
+    <h3>Drop your image here</h3>
+    <p>or <span class="browse-link">click to browse</span> &nbsp;·&nbsp; JPG, PNG, WebP</p>
+  </div>
+
+  <div class="settings-panel" id="settingsPanel">
+    <div class="file-info">
+      <img class="file-thumb" id="fileThumbnail" src="" alt="">
+      <div class="file-details">
+        <div class="file-name" id="fileName"></div>
+        <div class="file-meta" id="fileMeta"></div>
+      </div>
+      <button class="change-btn" onclick="resetTool()">Change image</button>
+    </div>
+    <div class="settings-body">
+      <span class="setting-label">Convert to format:</span>
+      <div class="format-grid">
+        <button class="format-btn active" onclick="selectFmt('image/jpeg','jpg',this)">
+          <span class="fmt-icon">🖼</span>JPG
+        </button>
+        <button class="format-btn" onclick="selectFmt('image/png','png',this)">
+          <span class="fmt-icon">📄</span>PNG
+        </button>
+        <button class="format-btn" onclick="selectFmt('image/webp','webp',this)">
+          <span class="fmt-icon">⚡</span>WebP
+        </button>
+      </div>
+      <button class="convert-btn" onclick="convertAndDownload()">🔄 Convert & Download</button>
+    </div>
+  </div>
+
+</div>
+
+<div class="ad-slot" style="max-width:728px;margin:0 auto;"><!-- Google AdSense --></div>
+
+<footer>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="compress.html">Compress</a>
+    <a href="bulk-compress.html">Bulk Compress</a>
+    <a href="convert.html">Convert</a>
+    <a href="resize.html">Resize</a>
+    <a href="remove-exif.html">Remove EXIF</a>
+    <a href="blog/index.html">Blog</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Use</a>
+  </div>
+  <p>© 2026 CompressPic.in · Free Image Tools · All processing done in your browser</p>
+</footer>
+
+<script>
+let currentFile = null;
+let targetMime = 'image/jpeg';
+let targetExt = 'jpg';
+
+const dropZone = document.getElementById('dropZone');
+const fileInput = document.getElementById('fileInput');
+
+dropZone.addEventListener('dragover', e => { e.preventDefault(); dropZone.classList.add('dragover'); });
+dropZone.addEventListener('dragleave', () => dropZone.classList.remove('dragover'));
+dropZone.addEventListener('drop', e => { e.preventDefault(); dropZone.classList.remove('dragover'); const f = e.dataTransfer.files[0]; if(f) loadFile(f); });
+fileInput.addEventListener('change', e => { if(e.target.files[0]) loadFile(e.target.files[0]); });
+
+function loadFile(file) {
+  currentFile = file;
+  const reader = new FileReader();
+  reader.onload = e => document.getElementById('fileThumbnail').src = e.target.result;
+  reader.readAsDataURL(file);
+  document.getElementById('fileName').textContent = file.name;
+  document.getElementById('fileMeta').textContent = (file.size/1024).toFixed(1) + ' KB · ' + file.type.replace('image/','').toUpperCase();
+  dropZone.style.display = 'none';
+  document.getElementById('settingsPanel').classList.add('show');
+}
+
+function resetTool() {
+  currentFile = null; fileInput.value = '';
+  dropZone.style.display = '';
+  document.getElementById('settingsPanel').classList.remove('show');
+}
+
+function selectFmt(mime, ext, btn) {
+  targetMime = mime; targetExt = ext;
+  document.querySelectorAll('.format-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+}
+
+function convertAndDownload() {
+  if (!currentFile) return;
+  const img = new Image();
+  const url = URL.createObjectURL(currentFile);
+  img.onload = () => {
+    const canvas = document.createElement('canvas');
+    canvas.width = img.naturalWidth; canvas.height = img.naturalHeight;
+    canvas.getContext('2d').drawImage(img, 0, 0);
+    URL.revokeObjectURL(url);
+    canvas.toBlob(blob => {
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = currentFile.name.replace(/\.[^/.]+$/, '') + '.' + targetExt;
+      a.click();
+    }, targetMime, 0.92);
+  };
+  img.src = url;
+}
+function toggleFaq(btn) {
+  const a = btn.nextElementSibling;
+  const c = btn.querySelector('.faq-chevron');
+  a.classList.toggle('open');
+  c.classList.toggle('open');
+}
+</script>
+<style>
+.faq-section{padding:40px 20px;max-width:580px;margin:0 auto;}
+.faq-section h2{font-size:1.3rem;font-weight:800;letter-spacing:-.4px;margin-bottom:20px;}
+.faq-item{background:var(--white);border:1px solid var(--border);border-radius:12px;margin-bottom:8px;overflow:hidden;box-shadow:var(--shadow);}
+.faq-q{width:100%;background:transparent;border:none;color:var(--text);padding:16px 18px;text-align:left;font-family:'Plus Jakarta Sans',sans-serif;font-size:.875rem;font-weight:600;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;}
+.faq-q:hover{background:var(--light);}
+.faq-a{padding:0 18px;color:var(--muted);font-size:.85rem;line-height:1.7;max-height:0;overflow:hidden;transition:max-height .3s ease,padding .3s;}
+.faq-a.open{max-height:200px;padding:12px 18px 16px;border-top:1px solid var(--border);}
+.faq-chevron{color:var(--muted);transition:transform .3s;flex-shrink:0;font-size:.72rem;}
+.faq-chevron.open{transform:rotate(180deg);}
+</style>
+<section class="faq-section">
+  <h2>Frequently Asked Questions</h2>
+  <div class="faq-item">
+    <button class="faq-q" onclick="toggleFaq(this)">How do I convert PNG to WebP for free? <span class="faq-chevron">▼</span></button>
+    <div class="faq-a">Upload your PNG on CompressPic, select WebP as the output format, and click Convert and Download. The conversion happens instantly in your browser for free.</div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-q" onclick="toggleFaq(this)">Why should I convert images to WebP? <span class="faq-chevron">▼</span></button>
+    <div class="faq-a">WebP images are 25–35% smaller than JPG and PNG at similar quality. This makes websites load faster and improves Google PageSpeed scores.</div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-q" onclick="toggleFaq(this)">Can I convert WebP back to JPG or PNG? <span class="faq-chevron">▼</span></button>
+    <div class="faq-a">Yes. Upload the WebP file and choose JPG or PNG as the output format. Conversion is instant.</div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-q" onclick="toggleFaq(this)">Does converting change image quality? <span class="faq-chevron">▼</span></button>
+    <div class="faq-a">Converting PNG to JPG/WebP may reduce quality slightly due to compression. JPG to PNG will not reduce quality (PNG is lossless) but file size will be larger.</div>
+  </div>
+</section>
+</body>
+</html>
