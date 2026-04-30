@@ -1,6 +1,0 @@
-User-agent: *
-Allow: /
-
-# Block nothing — all pages are public and indexable
-
-Sitemap: https://compresspic.in/sitemap.xml
