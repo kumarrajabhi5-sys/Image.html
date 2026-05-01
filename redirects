@@ -10,10 +10,14 @@
 /terms                  /terms.html                 200
 
 # Blog pages - clean URLs
-/Blog                   /blog/index.html            200
-/Blog/compress-image-to-20kb    /Blog/compress-image-to-20kb.html    200
-/Blog/convert-png-to-webp       /Blog/convert-png-to-webp.html       200
-/Blog/what-is-exif-data         /Blog/what-is-exif-data.html         200
+/Blog                        /Blog/index.html                    200
+/Blog/compress-image-to-20kb /Blog/compress-image-to-20kb.html  200
+/Blog/convert-png-to-webp    /Blog/convert-png-to-webp.html     200
+/Blog/what-is-exif-data      /Blog/what-is-exif-data.html       200
+/blog                        /Blog/index.html                    200
+/blog/compress-image-to-20kb /Blog/compress-image-to-20kb.html  200
+/blog/convert-png-to-webp    /Blog/convert-png-to-webp.html     200
+/blog/what-is-exif-data      /Blog/what-is-exif-data.html       200
 
-# Custom 404 - must be last
-/*                      /404.html                   404
+# Custom 404
+/*                    /404-1.html             404
