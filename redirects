@@ -1,0 +1,19 @@
+# CompressPic - Cloudflare Pages Redirects
+
+# Tool pages - clean URLs
+/compress               /compress.html              200
+/bulk-compress          /bulk-compress.html         200
+/convert                /convert.html               200
+/resize                 /resize.html                200
+/remove-exif            /remove-exif.html           200
+/privacy                /privacy.html               200
+/terms                  /terms.html                 200
+
+# Blog pages - clean URLs
+/blog                   /blog/index.html            200
+/blog/compress-image-to-20kb    /blog/compress-image-to-20kb.html    200
+/blog/convert-png-to-webp       /blog/convert-png-to-webp.html       200
+/blog/what-is-exif-data         /blog/what-is-exif-data.html         200
+
+# Custom 404 - must be last
+/*                      /404.html                   404
