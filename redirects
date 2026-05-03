@@ -9,21 +9,21 @@
 /privacy                 /privacy.html                 200
 /terms                   /terms.html                   200
 
-# Blog index
-/blog                    /Blog/index.html              200
-/Blog                    /Blog/index.html              200
+# blog index
+/blog                    /blog/index.html              200
+/blog                    /blog/index.html              200
 
 # Blog posts
-/blog/compress-image-to-20kb                          /Blog/compress-image-to-20kb.html                          200
-/blog/convert-png-to-webp                             /Blog/convert-png-to-webp.html                            200
-/blog/what-is-exif-data                               /Blog/what-is-exif-data.html                              200
-/blog/compress-image-for-passport-photo               /Blog/compress-image-for-passport-photo.html               200
-/blog/compress-image-for-whatsapp                     /Blog/compress-image-for-whatsapp.html                     200
-/blog/reduce-image-size-below-100kb-government-forms  /Blog/reduce-image-size-below-100kb-government-forms.html  200
-/blog/webp-vs-jpg-vs-png                              /Blog/webp-vs-jpg-vs-png.html                              200
-/blog/remove-exif-data-privacy                        /Blog/remove-exif-data-privacy.html                        200
-/blog/compress-images-instagram-facebook              /Blog/compress-images-instagram-facebook.html              200
-/blog/resize-images-online-without-losing-quality     /Blog/resize-images-online-without-losing-quality.html     200
+/blog/compress-image-to-20kb                          /blog/compress-image-to-20kb.html                          200
+/blog/convert-png-to-webp                             /blog/convert-png-to-webp.html                            200
+/blog/what-is-exif-data                               /blog/what-is-exif-data.html                              200
+/blog/compress-image-for-passport-photo               /blog/compress-image-for-passport-photo.html               200
+/blog/compress-image-for-whatsapp                     /blog/compress-image-for-whatsapp.html                     200
+/blog/reduce-image-size-below-100kb-government-forms  /blog/reduce-image-size-below-100kb-government-forms.html  200
+/blog/webp-vs-jpg-vs-png                              /blog/webp-vs-jpg-vs-png.html                              200
+/blog/remove-exif-data-privacy                        /blog/remove-exif-data-privacy.html                        200
+/blog/compress-images-instagram-facebook              /blog/compress-images-instagram-facebook.html              200
+/blog/resize-images-online-without-losing-quality     /blog/resize-images-online-without-losing-quality.html     200
 
 # Custom 404
 /*                       /404.html                     404
